@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Zomato Clone{% endblock %}</title>
+    <link rel="stylesheet" href="/static/restaurant/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Zomato</div>
+        <div class="nav-items">
+            <a href="{% url 'home' %}" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Restaurants</a>
+            <a href="#" class="nav-link">About</a>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="footer">
+        <p>© 2024 Zomato Clone. Made for demonstration purposes.</p>
+    </footer>
+
+    <script src="/static/restaurant/js/main.js"></script>
+</body>
+</html>

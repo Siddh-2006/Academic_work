@@ -1,0 +1,36 @@
+{% extends 'store/base.html' %}
+
+{% block content %}
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="Hero Banner">
+</div>
+
+<section class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+        {% for category in categories %}
+        <div class="category-card">
+            <img src="{{ category.image }}" alt="{{ category.name }}">
+            <h3>{{ category.name }}</h3>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="products">
+    <h2>Today's Deals</h2>
+    <div class="product-grid">
+        {% for product in products %}
+        <div class="product-card">
+            <img src="{{ product.image }}" alt="{{ product.name }}">
+            <div class="product-info">
+                <h3>{{ product.name }}</h3>
+                <div class="rating">{{ product.rating }} ★</div>
+                <div class="price">${{ product.price }}</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

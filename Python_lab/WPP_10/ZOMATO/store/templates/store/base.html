@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Amazon Clone{% endblock %}</title>
+    <link rel="stylesheet" href="/static/store/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">amazon</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search Amazon">
+            <button>Search</button>
+        </div>
+        <div class="nav-items">
+            <a href="#" class="nav-link">Sign In</a>
+            <a href="#" class="nav-link">Orders</a>
+            <a href="#" class="nav-link">Cart (0)</a>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Get to Know Us</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Press Releases</a>
+            </div>
+            <div class="footer-section">
+                <h3>Make Money with Us</h3>
+                <a href="#">Sell products</a>
+                <a href="#">Become an Affiliate</a>
+                <a href="#">Advertise Your Products</a>
+            </div>
+            <div class="footer-section">
+                <h3>Amazon Payment</h3>
+                <a href="#">Payment Methods</a>
+                <a href="#">Amazon Points</a>
+                <a href="#">Returns</a>
+            </div>
+            <div class="footer-section">
+                <h3>Let Us Help You</h3>
+                <a href="#">Your Account</a>
+                <a href="#">Shipping Rates</a>
+                <a href="#">Help</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Amazon Clone. Made for demonstration purposes.</p>
+        </div>
+    </footer>
+
+    <script src="/static/store/js/main.js"></script>
+</body>
+</html>
